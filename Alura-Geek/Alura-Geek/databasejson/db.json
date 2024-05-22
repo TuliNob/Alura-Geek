@@ -1,0 +1,46 @@
+{
+  "productos": [
+    {
+      "id": "9259",
+      "nombre": "Capitan America",
+      "precio": "170.00",
+      "imagen": "https://masterstore.com.pe/wp-content/uploads/2021/02/Taza-Capitan-America-510x510.png"
+    },
+    {
+      "id": "ca8c",
+      "nombre": "Taza pantera negra",
+      "precio": "65.00",
+      "imagen": "https://masterstore.com.pe/wp-content/uploads/2021/11/Taza-Pantera-Negra-510x510.jpg"
+    },
+    {
+      "id": "7b7a",
+      "nombre": "Taza superman",
+      "precio": "50.00",
+      "imagen": "https://masterstore.com.pe/wp-content/uploads/2021/11/Taza-Superman-247x296.jpg"
+    },
+    {
+      "id": "fdc0",
+      "nombre": "Taza Stars wars",
+      "precio": "150.00",
+      "imagen": "https://masterstore.com.pe/wp-content/uploads/2021/09/Taza-Darth-Vader-Nacional-247x296.png"
+    },
+    {
+      "id": "1910",
+      "nombre": "Taza inodoro",
+      "precio": "123.00",
+      "imagen": "https://masterstore.com.pe/wp-content/uploads/2021/09/Taza-Inodoro-247x296.png"
+    },
+    {
+      "id": "1581",
+      "nombre": "Taza Jack Skelletong",
+      "precio": "99.00",
+      "imagen": "https://masterstore.com.pe/wp-content/uploads/2021/09/Taza-Jack-2-247x296.png"
+    },
+    {
+      "id": "3f87",
+      "nombre": "Taza Martillo Thor",
+      "precio": "99.00",
+      "imagen": "https://masterstore.com.pe/wp-content/uploads/2021/09/Taza-Martillo-Thor-247x296.png"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Challenge AluraGeek</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&family=Fraunces:opsz,wght@9..144,500&family=Inter:wght@100..900&family=Press+Start+2P&family=Roboto+Slab&family=Spectral:ital,wght@1,600;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&family=Fraunces:opsz,wght@9..144,500&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&family=Press+Start+2P&family=Roboto+Slab&family=Spectral:ital,wght@1,600;1,800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header>
+        <div class="cabecera">
+            <h1 class="logo__item"><img src="img/Logo.png"></h1>
+        </div>
+    </header>
+    
+    <!-- Main -->
+    <main>
+        <!--formulario para agregar los products-->
+        <div class="formulario">
+            <h2 class="titulo__formulario">AGREGAR<br>PRODUCTO:</h2>
+            <form class="productos" data-formulario><!-- usar data structure en form y los inputs-->
+                <input class="formulario__nombre" type="text" id="nombre" name="nombre" placeholder="nombre..." required data-nombre>
+                <span id="errorNombre" class="error"></span>
+                <br>
+                <input class="formulario__precio" type="number" name="precio" id="precio" placeholder="precio..." required data-precio>
+                <span id="errorPrecio" class="error"></span>
+                <br>
+                <input class="formcontato__img" type="text" name="imagen" id="imagen" placeholder="URL de imagen..." accept="image/*"  required data-imagen>
+                <span id="errorImagen" class="error"></span>
+                <div class="botones">
+                    <button type="submit" id="btnEnviar" class="boton__enviar" disabled>Enviar</button>
+                    <button type="reset" id="btnLimpiar" class="boton__limpiar">Limpiar</button>
+                </div>
+
+            </form>
+        </div>
+
+        <!-- Productos agregados-->
+        <div class="productos__agregados">
+            <h1 class="title__mis__productos">Mis productos:</h1>
+            <ul class="ul__card__productos" data-lista>
+            </ul>
+        </div>
+
+    </main>
+    <footer>
+            <img src="img/Logo.png">
+            <p class="desarrollo">DESARROLLADO POR MARTÍN ESPERÓN</p>
+            <P class="alura__latam">ALURA LATAM 2024 - TODOS LOS DERECHOS RESERVADOS</P>
+    </footer>
+    <script src="js/main.js" type="module"></script>
+    <script src="js/mostrarProductos.js" type="module"></script>
+    <script src="js/crearProducto.js" type="module"></script>
+</body>
+
+</html>

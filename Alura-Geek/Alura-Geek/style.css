@@ -1,0 +1,299 @@
+/*_____Cabecera_____*/
+.cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    height: 100px;
+    border-bottom: 5px solid #E5E5E5;
+}
+
+.cabecera img {
+    width: 75vw;
+}
+
+/*_____Main_____*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.titulo__formulario {
+    font-size: 24px;
+    margin: 15vw 0 10vw 0;
+    text-align: center;
+}
+
+.formulario__nombre,
+.formulario__precio,
+.formcontato__img {
+    width: 80vw;
+    height: 58px;
+    color: #03318C;
+    border: 2px solid #03318C;
+    border-radius: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.error {
+    margin: 10px 0 30px 20px;
+}
+
+::placeholder,
+.error,
+button {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-weight: 600;
+    color: #03318C;
+    font-size: 16px;
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.boton__enviar,
+.boton__limpiar {
+    width: 35vw;
+    height: 55px;
+    border-radius: 15px;
+}
+
+.boton__enviar {
+    background-color: #03318C;
+    color: white;
+    border: none;
+}
+
+.boton__enviar:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.boton__limpiar {
+    background-color: white;
+    color: #03318C;
+    border: 2px solid #03318C;
+}
+
+/*____Productos agregados____*/
+.title__mis__productos {
+    margin: 10vw 0 10vw 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.ul__card__productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 8px;
+    max-width: 85vw;
+    margin: 0 8px;
+}
+
+.mensaje-vacio {
+    text-align: center;
+    font-family: 'IBM Plex Mono', sans-serif;
+    color: #444;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #5D04D9;
+    border-radius: 5px;
+    border: 3px solid #000;
+    margin-bottom: 40px;
+}
+
+.card :first-child {
+    align-self: center;
+}
+
+.card__image {
+    width: 90%;
+    height: 20vh;
+    border: 2px solid #000;
+    margin: 5px;
+}
+
+.card__title {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.precio__trash {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+.card__price {
+    width: 100px;
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+footer {
+    text-align: center;
+    justify-content: center;
+    background-color: #000000;
+    width: 100%;
+    height: 168px;
+    border-top: 5px solid #E5E5E5;
+}
+
+footer img {
+    margin-top: 30px;
+}
+
+.desarrollo,
+.alura__latam {
+    font-family: 'IBM Plex Mono', sans-serif;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.alura__latam {
+    font-weight: 200;
+}
+
+/*_______________________________________________Tabletas________________________________________________*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .cabecera img {
+        width: 374px;
+        height: 56px;
+    }
+
+    .formulario__nombre,
+    .formulario__precio,
+    .formcontato__img {
+        width: 65vw;
+    }
+
+    .input-file-container {
+        width: 65vw;
+    }
+
+    .boton__enviar,
+    .boton__limpiar {
+        width: 25vw;
+    }
+
+    .ul__card__productos {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 8px;
+        max-width: 85vw;
+        margin: 0 8px 40px 8px;
+        padding: 15px;
+        height: 40vh;
+        overflow-y: auto;
+        box-shadow: -5px 10px 2px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/*_________________________________________________PC____________________________________________________*/
+@media (min-width: 1024px) {
+    .cabecera img {
+        width: 374px;
+        height: 56px;
+    }
+
+    main {
+        flex-direction: row-reverse;
+        height: 100%;
+        align-items: baseline;
+        gap: 80px;
+        margin: 50px 0 100px 0;
+    }
+
+    .titulo__formulario {
+        margin: 40px 0;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 35vw;
+    }
+
+    .formulario__nombre,
+    .formulario__precio,
+    .formcontato__img {
+        width: 30vw;
+    }
+
+    .input-file-container {
+        width: 30vw;
+    }
+
+    .boton__enviar,
+    .boton__limpiar {
+        width: 15vw;
+    }
+
+    .title__mis__productos {
+        margin: 40px 0;
+    }
+
+    .ul__card__productos {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 8px;
+        max-width: 50vw;
+        max-height: 60vh;
+        overflow-y: auto;
+        box-shadow: -10px 10px 2px rgba(0, 0, 0, 0.2);
+        margin: 0 8px 40px 8px;
+        padding-right: 15px;
+    }
+}
+
+/*_____________________________Orientación vertical 1024px________________________________*/
+@media (min-width: 1024px) and (orientation: portrait) {
+    footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .card {
+        max-height: 15vh;
+    }
+}
+
+
+
